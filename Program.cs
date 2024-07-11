@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ispit.Proizvodi
@@ -29,11 +30,11 @@ namespace Ispit.Proizvodi
                 polaznik4.OdgovoriNaPitanja(vrijemePocetka);
             };
 
-
             polaznik1.IspitZavrsen += (polaznik) => predavac.IspitZaprimljen(polaznik);
 
             predavac.ZvoniZvono();
 
+            Thread.Sleep(1000);
             polaznik1.PredajOdgovoreNaPitanja();
 
             Console.ReadKey();
