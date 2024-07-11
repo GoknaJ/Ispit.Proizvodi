@@ -13,6 +13,7 @@ namespace Ispit.Proizvodi
         public void OdgovoriNaPitanja(DateTime vrijemePocetka)
         {
             Console.WriteLine($"Polaznik \t{ImePrezime}\t je započeo pisanje ispita u: \t{vrijemePocetka} ");
+            Console.WriteLine("=========================================================================================="); 
         }
 
         public void PredajOdgovoreNaPitanja()

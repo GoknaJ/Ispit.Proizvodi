@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Ispit.Proizvodi
 {
@@ -15,7 +16,8 @@ namespace Ispit.Proizvodi
 
         public void IspitZaprimljen(Polaznik polaznik)
         {
-            Console.WriteLine($"\nPredavač je zaprimio odgovore od polaznika: {polaznik.ImePrezime}. ");
+            Thread.Sleep(1000);
+            Console.WriteLine($"Predavač je zaprimio odgovore od polaznika: {polaznik.ImePrezime}. ");
         }
     }
 }
