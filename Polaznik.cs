@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ispit.Proizvodi
 {
-
     public class Polaznik
     {
         public delegate void PredajIspit(Polaznik polaznik);
@@ -17,12 +12,12 @@ namespace Ispit.Proizvodi
 
         public void OdgovoriNaPitanja(DateTime vrijemePocetka)
         {
-            Console.WriteLine($"Polaznik {ImePrezime}, je započeo pisanje ispita u: {vrijemePocetka} ");
+            Console.WriteLine($"Polaznik \t{ImePrezime}\t je započeo pisanje ispita u: \t{vrijemePocetka} ");
         }
 
-        public void PredajOfgovoreNaPitanja()
+        public void PredajOdgovoreNaPitanja()
         {
-            Console.WriteLine($"Polaznik {ImePrezime} je predao odgovore.");
+            Console.WriteLine($"\nPolaznik {ImePrezime} je predao odgovore.");
             IspitZavrsen?.Invoke(this);
         }
     }
